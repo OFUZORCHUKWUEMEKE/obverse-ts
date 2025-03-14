@@ -8,7 +8,13 @@ import { PaymentModule } from './payment/payment.module';
 import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [TelegramModule, SolanaModule, LlamaindexModule, PaymentModule, UsersModule],
+  imports: [
+    TelegramModule,
+    SolanaModule,
+    LlamaindexModule, 
+    PaymentModule, 
+    UsersModule
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
