@@ -8,7 +8,7 @@ import { UserDocument } from './user.model';
 @Injectable()
 export class UserRepository extends CoreRepository<UserDocument> {
     constructor(
-        @InjectModel('Payment')
+        @InjectModel('User')
         userModel: Model<UserDocument>,
     ) {
         super(userModel);

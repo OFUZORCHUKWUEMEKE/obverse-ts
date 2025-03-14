@@ -12,7 +12,7 @@ export class User {
   username: string;
 
   @Prop({})
-  merchantName:string
+  merchantName?:string
 
   @Prop()
   firstName: string;
@@ -24,7 +24,7 @@ export class User {
   isAdmin: boolean;
 
   @Prop({ default: [] })
-  walletAddresses: string[];
+  walletAddresses?: string[];
 
   @Prop({ default: 0 })
   totalTransactions: number;
